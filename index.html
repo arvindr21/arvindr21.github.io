@@ -3,6 +3,17 @@
         <meta http-equiv="refresh" content="5;url=http://www.somewhere.com/" />
     </head>
     <body>
-        <h1>Redirecting to my Blog in 5 seconds...</h1>
+        <h3 id="msg"></h3>
+        <script type="text/javascript">   
+            function Redirect() 
+            {  
+                window.location="http://www.newpage.com"; 
+            } 
+            var i = 5;
+            setInterval(function(){
+                document.getElementById('msg').innerHTML = 'Redirecting to my Blog in '+(i--)+' seconds...';
+            }, 5000);
+            setTimeout('Redirect()', 5000);   
+        </script>
     </body>
 </html>
