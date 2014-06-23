@@ -730,3 +730,19 @@ Change widths as necessary
   p, h2, h3 {orphans: 3; widows: 3}
   h2, h3{page-break-after: avoid}
 }
+
+.message
+{
+  width: 100%;
+text-align: center;
+background: rgb(173, 83, 41);
+height: 45px;
+color: #fff;
+font-size: 29px;
+}
+
+.message a
+{
+  color: #fff;
+  border-bottom: 1px dashed;
+}
