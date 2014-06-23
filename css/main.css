@@ -733,12 +733,12 @@ Change widths as necessary
 
 .message
 {
-  width: 100%;
+width: 100%;
 text-align: center;
 background: rgb(173, 83, 41);
-height: 45px;
 color: #fff;
 font-size: 29px;
+padding: 9px;
 }
 
 .message a
