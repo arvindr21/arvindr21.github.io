@@ -1,25 +1,25 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "next-markdown-blog",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "start": "hexo server"
-  },
-  "hexo": {
-    "version": "5.2.0"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "hexo": "^5.0.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-index": "^2.0.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^3.0.0",
-    "hexo-renderer-stylus": "^2.0.0",
-    "hexo-server": "^2.0.0"
+    "gray-matter": "^4.0.3",
+    "marked": "^2.1.2",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.5",
+    "@types/react": "^17.0.11",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "typescript": "^4.3.4"
   }
 }
